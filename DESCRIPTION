@@ -1,6 +1,6 @@
 Package: trac
 Title: Tree-based Aggregation of Compositional Data
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     c(person(given = "Jacob",
              family = "Bien",
@@ -13,14 +13,31 @@ Authors@R:
              family = "Yan",
              role = "aut"))
 Description: Performs tree-based aggregation of compositional data with a particular focus on microbiome data.
+URL: https://jacobbien.github.io/trac, https://github.com/jacobbien/trac
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
+Remotes: jacobbien/ggb
 Imports: 
     reticulate,
     Matrix,
     ggb,
     igraph,
-    ape
+    ape,
+    purrr,
+    ggplot2,
+    tibble,
+    stringr,
+    dplyr,
+    tidyr,
+    magrittr,
+    rlang
+Suggests: 
+    rmarkdown,
+    knitr,
+    testthat
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
